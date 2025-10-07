@@ -4,19 +4,21 @@
 \usepackage[T2A]{fontenc}
 \usepackage[english, russian]{babel}
 
-\usepackage[margin=1.4cm,footskip=12pt]{geometry}  \parindent=0mm
+\usepackage[margin=1.4cm,top=0.85cm,
+            bottom=1.1cm,footskip=12pt]{geometry}
+\parindent=0mm    \usepackage[svgnames]{xcolor}
 \usepackage{makecell,multirow,tikz,ulem,hyperref,colortbl}
-\usepackage[svgnames]{xcolor}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}  \fancyhead{}
 \fancyfoot[C]{{\footnotesize Typeset with \LaTeX,\ \ St. Petersburg,\ \ 2025}}
 
-\renewcommand{\arraystretch}{1.8}
+\renewcommand{\arraystretch}{1.7}
+\newcommand{\lcme}{\hfill{\sffamily\mdseries\itshape ЛНМО}}
 
 \newcommand{\Relative}[2][]{\tikz{
-  \node[draw, rectangle, rounded corners=1mm, inner sep=1.5mm] at (0,0) {
+  \node[draw, rectangle, rounded corners=1.2mm, inner sep=1.4mm] at (0,0) {
     \begin{minipage}[t]{4.2cm}
       {\large\bf #2}\ \ {\large\it #1}
     \end{minipage}
@@ -25,16 +27,21 @@
 
 \newcommand{\Guest}[2]{\tikz{
   \node[draw, rectangle, rounded corners=1mm, inner sep=1.5mm] at (0,0) {
-    \begin{minipage}[t]{5cm} \raggedright
+    \begin{minipage}[t]{5.1cm} \raggedright
       {\large\bf #1} \smallskip \\ #2
     \end{minipage}
   }
 }}
 
-
-\begin{document}
+\begin{document} \phantom{Sample text}
 
 \section*{We Are Happy to Invite You to our Wedding Ceremony!}
+
+{\large
+Our names are {\it Maria} and {\it Boris,} and we are getting
+married on {\bf October 22, 2025.} \\ [0.15cm]
+The event is going to take place in St. Petersburg and Pushkin.
+}
 
 \subsection*{Tentative schedule}
 
@@ -80,54 +87,100 @@ Banquet & 18:20– \newline 23:00 & ``Lido'' hall, \newline 69, Revolutsii hw%
 \end{tabular} \end{center}
 
 \subsection*{Dress code}
-We politely suggest you to wear a somewhat formal outfit, with no bright colors that would mess up the photographs at the event (no clown costumes this time, unfortunately).
+We politely suggest that you wear a somewhat formal outfit, with no bright colors
+that would mess up the photographs at the event (no clown costumes and
+{\it RHCP} T-shirts this time, unfortunately). For ladies: pastel colors, if you will.
 
+\subsection*{Alcohol}
+A basic set of alcoholic drinks will be provided at the banquet,
+including champagne, wine, and vodka.
+You are free (and actually encouraged!) to sneak your own {\it Жигулёвское} into the hall.
 
 \subsection*{Feedback}
-We would like to hear about your preferences, that include but are not limited to: \begin{itemize}
+We would like to hear about your preferences, that include but are not limited to:
+\begin{itemize}
   \item what music you'd like to have in the playlist at the banquet;
-  \item what drinks you'd like to be served;
-  \item and if you have any ideas on fun games and challenges for the evening.
+  \item if you have any ideas on fun games and challenges for the evening;
+  \item whatever details you would like to add.
 \end{itemize}
 
-\newpage
-
-\section*{A Guide on the Invited Guests}
+\newpage \thispagestyle{empty}
+\section*{A Guide on the Invited Guests (in Russian)} \vspace{-0.375cm}
 
 \begin{center}%
 \begin{minipage}[t]{5cm} \centering
 \begin{tabular}{l}
 {\sffamily\large Relatives} \\
-\Relative[мама]{Анастасия} \\
-\Relative[папа]{Игорь} \\
-\Relative[сестра]{Вика} \\
-\Relative[сестра]{Арина} \\
-\Relative[бабушка]{Елена} \\
-\Relative[бабушка]{Ирина} \\
-\Relative[\\ двоюродный брат]{Фёдор} \\
-\Relative[крёстная]{Ольга} \\
-\Relative[крёстный]{Виктор} \\
-\Relative[друг семьи]{Наталья} \\ 
-\Relative[друг семьи]{Дмитрий} \\
-\Relative[\\ маленький друг]{Лёша} \\
+\Relative[мама]{Анастасия} \\		\Relative[папа]{Игорь} \\
+\Relative[сестра]{Вика} \\		\Relative[сестра]{Арина} \\
+\Relative[бабушка]{Елена} \\		\Relative[бабушка]{Ирина} \\
+\Relative[\\ двоюродный брат]{Фёдор} \\	\Relative[крёстная]{Ольга} \\
+\Relative[крёстный]{Виктор} \\		\Relative[друг семьи]{Наталья} \\ 
+\Relative[друг семьи]{Дмитрий} \\	\Relative[\\ маленький друг]{Лёша} \\
 \\
-\Relative[мама]{Ольга} \\
-\Relative[отчим]{Сергей} \\
+\Relative[мама]{Ольга} \\		\Relative[отчим]{Сергей} \\
 \Relative[бабушка]{Алла} \\
 \end{tabular}
 \end{minipage}\ \ 
+%
 \begin{minipage}[t]{11.8cm} \centering
 \begin{tabular}{ll}
 {\sffamily\large Bride's side} & {\sffamily\large Groom's side} \\
-\Guest{Вова Гордеев}{400 кк/наносек, продажи, менеджмент, размазывание тортов по лицу} & \Guest{Андрей Семенов}{Реактивный супремасизм, гадание на картах «Сумеречной борьбы»} \\
-\Guest{Оля}{Биохимия ИТМО, прогулки по В. О., эстетика Псковской области} & \Guest{Даша}{Знает как приручить русалку; и Тойоту; и Мозоляку} \\
-\Guest{Никита}{Заснёт первым, успейте познакомиться и сфотографировать} & \Guest{Руслан}{Курс криптовалюты не должен падать; угадайте его треки в плейлисте сегодня} \\
-\Guest{Полина Пашина}{Выбралась из Саратова, народные песни (крики в общежитии)} & \Guest{Ксюша}{} \\
-\Guest{Аня}{Если про свадьбу выйдет журналистское расследование, знайте, кто это сделал} & \Guest{Илья}{} \\
-\Guest{Камилла\ \ \includegraphics[height=10.3pt]{img/dong-zhongwen}}{Жена белого офицера; устроилась работать в школу, но есть нюанс} & \Guest{Каша Моротких\ \ \includegraphics[height=10.3pt]{img/gongchan}}{} \\
-\Guest{Сергей}{Мужчина с филфака; перетанцует всех (мы проверяли)} & \Guest{Петя}{Эзотерический луддизм, Fungi и Largi, проект 376 «Ярославец»} \\
-\Guest{Софья}{Забрала всех учеников с профи.ру до релиза профи.ру; купила машину за наличку} & \Guest{Вова Ивченко}{} \\
-\Guest{Ира}{Минеральные воды, вожатство; слушаем и не осуждаем} & \Guest{Илья Попов}{} \\
+
+\Guest{Вова Гордеев}{400 кк/наносек, продажи, менеджмент,
+размазывание тортов по лицу}
+& \Guest{Андрей\lcme}{Реактивный супремасизм, гадание
+на картах «Сумеречной борьбы»} \\
+
+\Guest{Оля}{Биохимия ИТМО, \newline прогулки по В. О.,
+\newline эстетика Псковской области}
+& \Guest{Даша}{Знает как приручить русалку; \newline и Тойоту;
+и Мозоляку; \newline и Андрея} \\
+
+\Guest{Никита}{Заснёт первым, успейте познакомиться и сфотографировать}
+& \Guest{Руслан \lcme}{Курс криптовалюты не должен падать;
+угадайте его музыку в плейлисте сегодня} \\
+
+\Guest{Полина Пашина}{Выбралась из Саратова,
+народные песни (крики в общежитии)}
+& \Guest{Ксюша}{Изучает корейскую культуру и
+не замечает надписи «нижняя подсветка вкл.»} \\
+
+\Guest{Маша\hfill\includegraphics[height=10.3pt]{img/gongchan}}{Медицина,
+Поющий яркий май, \newline как уследить за детьми в лесу, целая полка самоваров}
+& \Guest{Илья\lcme}{Знает все треки группы {\it ГООL,} а также как стать
+лучшим классным руководителем} \\
+
+\Guest{Аня}{Если про свадьбу выйдет журналистское
+расследование, знайте, кто это сделал}
+& \Guest{Петя\lcme}{Эзотерический луддизм, \newline Fungi и Largi,
+\newline проект 376 «Ярославец»} \\
+
+\Guest{Камилла\hfill\includegraphics[height=10.3pt]{img/dong-zhongwen}}{Жена
+белого офицера; устроилась работать в школу, но есть нюанс}
+& \Guest{Вова Ивченко}{Уральские алгебра и IT (Запрещённая в России
+экстремистская организация)} \\
+
+\Guest{Сергей}{Мужчина с филфака; перетанцует всех (мы проверяли)}
+& \Guest{Чарли}{Из Нанкина, Китай; \newline незаменим на работе
+\newline и храбр на болоте} \\
+
+\Guest{Софья}{Забрала всех учеников с профи.ру до релиза профи.ру;
+купила машину за наличку}
+& \Guest{Цзяньхуа}{Из провинции Хубэй, Китай; \newline свой человек
+на созвонах \newline с головным офисом} \\
+
+\Guest{Ира}{Минеральные воды, вожатство, русский язык как иностран-
+ный; слушаем и не осуждаем}
+& \Guest{Настя}{Что лучше: месяц играть партию в {\it D\&D}
+или дебажить нейросеть в воскресенье?} \\
+
+\Guest{Илья Попов}{Все виды моторных масел, придворный фотограф
+Николая II, любовь к таксе}
+& \Guest{Костя\lcme}{Организовывал турниры тогда, когда мы
+готовили для них стратегию. А ещё настолки} \\
+
+\Guest{Алина}{Профком и актив Герцена, тайные закоулки стадиона-изопода}
 \end{tabular}
 \end{minipage}
 \end{center}
